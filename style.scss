@@ -20,8 +20,8 @@ dd {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role="list"],
-ol[role="list"] {
+ul,
+ol {
   list-style: none;
 }
 
@@ -40,9 +40,8 @@ body {
   max-width: 1280px;
 }
 
-/* A elements that don't have a class get default styles */
-a:not([class]) {
-  text-decoration-skip-ink: auto;
+a {
+  text-decoration: none;
 }
 
 /* Make images easier to work with */
@@ -61,14 +60,19 @@ select {
 }
 
 .header {
-  position: absolute;
   z-index: 10;
+  position: relative;
   &__container {
+    position: absolute;
     max-width: 1200px;
   }
 
   &__content {
+    margin: 0 auto;
     display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    padding-top: 40px;
   }
 
   &__logo {
@@ -78,18 +82,48 @@ select {
   }
 
   &__list {
+    display: flex;
   }
 
-  &__item {
+  &__item:not(:last-child) {
+    margin-right: 35px;
   }
 
   &__link {
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: #cdcdcd;
   }
 }
 .logo-text {
   &__up {
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 110%;
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+
+    color: #f1cdb3;
   }
 
   &__down {
+    padding-top: 10px;
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1em;
+    color: #ffffff;
   }
 }
