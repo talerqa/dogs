@@ -2,8 +2,7 @@
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Remove default margin */
@@ -64,15 +63,33 @@ select {
 .header {
   position: absolute;
   z-index: 10;
-}
+  &__container {
+    max-width: 1200px;
+  }
 
-.header__container {
-  max-width: 1200px;
-}
+  &__content {
+    display: flex;
+  }
 
-.header__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  &__logo {
+  }
+
+  &__nav {
+  }
+
+  &__list {
+  }
+
+  &__item {
+  }
+
+  &__link {
+  }
 }
-/*# sourceMappingURL=style.css.map */
+.logo-text {
+  &__up {
+  }
+
+  &__down {
+  }
+}
