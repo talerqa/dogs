@@ -97,6 +97,11 @@ select {
     font-size: 15px;
     line-height: 160%;
     color: #cdcdcd;
+    padding-bottom: 3px;
+  }
+
+  &__link:hover {
+    border-bottom: 3px solid #f1cdb3;
   }
 }
 .logo-text {
@@ -170,13 +175,17 @@ select {
     align-items: center;
     padding: 15px 45px;
     gap: 10px;
-
     width: 207px;
     height: 52px;
-
     background: #f1cdb3;
     border-radius: 100px;
   }
+
+  &__button:hover {
+    transform: scale(1.1, 1.1);
+    transition: all ease 0.5s;
+  }
 }
 .button {
+  cursor: pointer;
 }
